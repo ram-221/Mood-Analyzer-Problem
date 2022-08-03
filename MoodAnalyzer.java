@@ -1,7 +1,7 @@
-package com.nullmood;
+package com.handleexcepation;
 
 /**
- * Purpose - Null Mood Should Return Happy
+ * Purpose - Handle Exception if User Provides Invalid Mood
  *
  */
 

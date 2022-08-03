@@ -1,8 +1,9 @@
-package com.nullmood;
+package com.handleexcepation;
+
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MoodAnalyzerTest {
+public class MoodanalyzerTest {
 
 	@Test
 	public void givenMessage_SadMood_Should_Return_Sad() {
@@ -16,13 +17,6 @@ public class MoodAnalyzerTest {
 	@Test
 	public void givenMessage_AnyMood_Should_Return_HAPPY() {
 		MoodAnalyzer moodAnalyser = new MoodAnalyzer("I am in Happy Mood");
-		String mood = moodAnalyser.analyseMood();
-		Assert.assertEquals("HAPPY", mood);
-	}
-
-	@Test
-	public void given_NULLMood_Should_Return_HAPPY() {
-		MoodAnalyzer moodAnalyser = new MoodAnalyzer(null);
 		String mood = moodAnalyser.analyseMood();
 		Assert.assertEquals("HAPPY", mood);
 }
