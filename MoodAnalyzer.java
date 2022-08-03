@@ -1,5 +1,6 @@
 package com.repeattc;
 
+
 /**
  * Purpose - “I am in Happy Mood” message Should Return Happy
  *
@@ -24,3 +25,4 @@ public class MoodAnalyzer {
 			return "HAPPY";
 	}
 }
+
