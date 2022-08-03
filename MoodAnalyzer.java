@@ -1,8 +1,7 @@
-package com.repeattc;
-
+package com.nullmood;
 
 /**
- * Purpose - “I am in Happy Mood” message Should Return Happy
+ * Purpose - Null Mood Should Return Happy
  *
  */
 
@@ -18,11 +17,16 @@ public class MoodAnalyzer {
 		this.message = message;
 	}
 
+	// Handling Exception
 	public String analyseMood() {
-		if (this.message.contains("Sad"))
-			return "SAD";
-		else
+		try {
+
+			if (this.message.contains("Sad"))
+				return "SAD";
+			else
+				return "HAPPY";
+		} catch (NullPointerException e) {
 			return "HAPPY";
+		}
 	}
 }
-
